@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+	--min: 320px;
+	--max: 1400px;
+	--text-max: 29em;
+
+	/* color palette */
+	--snow: hsla(0, 0%, 99%, 1);
+	--light: hsla(0, 0%, 90%, 1);
+	--gray-light: hsla(0, 0%, 71%, 1);
+	--gray-dark: hsla(0, 0%, 17%, 1);
+	--void: hsla(0, 0%, 17%, 1);
+	--dark: hsla(0, 0%, 8%, 1);
+
+	--dark05: hsla(0, 0%, 8%, 0.5);
+	--dark07: hsla(0, 0%, 8%, 0.7);
+	--dark09: hsla(0, 0%, 8%, 0.9);
+
+	color-scheme: dark;
+	color: var(--light);
+	background-color: var(--dark);
+
+	/* Type scale: Golden Ratio */
+	--g0s: clamp(0.6181rem, 0.5724rem + 0.2287vw, 0.7725rem);
+	--g0: clamp(1rem, 0.9259rem + 0.3704vw, 1.25rem);
+	--g1: clamp(1.6181rem, 1.4983rem + 0.5991vw, 2.0225rem);
+	--g2: clamp(2.6181rem, 2.4242rem + 0.9694vw, 3.2725rem);
+	--g3: clamp(4.2356rem, 3.9217rem + 1.5694vw, 5.295rem);
+	--g4: clamp(6.8538rem, 6.3462rem + 2.538vw, 8.5669rem);
+
+	/* Type scale: Perfect Fourth  */
+	--p0s: clamp(0.75rem, 0.6944rem + 0.2778vw, 0.9375rem);
+	--p0: clamp(1rem, 0.9259rem + 0.3704vw, 1.25rem);
+	--p1: clamp(1.3331rem, 1.2344rem + 0.4935vw, 1.6663rem);
+	--p2: clamp(1.7769rem, 1.6452rem + 0.6583vw, 2.2213rem);
+	--p3: clamp(2.3688rem, 2.1934rem + 0.8769vw, 2.9606rem);
+	--p4: clamp(3.1575rem, 2.9236rem + 1.1694vw, 3.9469rem);
+
+	font-weight: 400;
+	text-align: left;
+	font-size: default;
+	cursor: default;
+
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-text-size-adjust: 100%;
+
+	font-family: 'Oswald', sans-serif;
+	font-family: 'Source Sans 3', sans-serif;
+}
+
+/* typography */
+h1,
+h2,
+h3,
+h4 {
+	font-family: 'Oswald', sans-serif;
+	letter-spacing: 0.07em;
+	line-height: 1.68em;
+	margin: 0.5em 0;
+	font-weight: 800;
+	width: 100%;
+	max-width: var(--text-max);
+}
+
+h1,
+h3 {
+	font-size: var(--p3);
+	text-transform: uppercase;
+}
+
+h4,
+h2 {
+	font-size: var(--p0);
+}
+
+p,
+a,
+button {
+	font-family: 'Source Sans 3', sans-serif;
+	font-size: var(--p0);
+	line-height: var(--p1);
+	margin: var(--p0) 0;
+	width: 100%;
+	max-width: var(--text-max);
+}
+
+.small {
+	font-size: var(--p0s);
+	font-weight: 800;
+	letter-spacing: 0.07em;
+}
+
+.italic {
+	font-style: italic;
+	letter-spacing: 0.07em;
+}
+
+.bold {
+	font-weight: 800;
+	letter-spacing: 0.07em;
+}
+
+/* Layout */
+
+html {
+	scroll-behavior: smooth;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--dark);
+	height: 100vh;
+	margin: 0px;
+	overflow: hidden;
+}
